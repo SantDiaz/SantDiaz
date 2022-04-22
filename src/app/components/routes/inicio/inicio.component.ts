@@ -44,7 +44,7 @@ export class InicioComponent implements OnInit {
   getTrending(){
     this.MovieSeriesService.getTrending().subscribe({
       next: (data : any) => {
-        console.log("estoyenget")
+        console.log("get")
        this.Todos = data.results;
       console.log(data.results);
     },
