@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+
+body{
+    height: 100vh;
+    min-height: 800px;
+    background: #141e30;
+    background: -webkit-linear-gradient(to right, #243b55, #141e30);
+    background: linear-gradient(
+        to right,
+        #243b55,
+        #141e30
+    ); 
+    color:#ebeef5
+}
+
+.flex{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}

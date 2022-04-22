@@ -1,0 +1,41 @@
+header{
+    background-color: #243b55;
+  }
+  
+  nav {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    background-color: #243b55;
+    
+  }
+  .logo{
+    Width:27.48px ;
+    Height: 32px;
+    Top : 4px;
+    margin: 12px 125.6px;
+  
+  }
+  .links{
+    height: 100%;
+    width: 50%;
+    display: flex;
+  }
+  .buttons{
+    height: 100%;
+    width: 50%;
+    margin: 20px 0 0 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-item {
+    display: flex ;
+    justify-content: space-between;
+  }
+  .nav-link{
+    text-decoration: none;
+    color: white;
+  }

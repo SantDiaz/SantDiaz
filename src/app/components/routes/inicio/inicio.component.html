@@ -1,0 +1,47 @@
+<section>
+  <div class ="container2">
+  <h1>PelisUP!</h1>
+  <p>Plataforma para ver peliculas y series </p>
+
+
+  <input type="text"placeholder="Buscar películas y series"[(ngModel)]="title" (ngModelChange)="buscador()"/>
+
+        <div class="btn-group d-flex align-items-center justify-content-around">
+     <button (click)="mostrar('Todos')" [ngClass]="filter == 'Todos' ? 'filter active' : 'filter'">Todos</button>   
+     <button (click)="mostrar('Pelicula')" [ngClass]="filter == 'Pelicula' ? 'filter active' : 'filter'">Peliculas</button>
+    <button (click)="mostrar('Serie')" [ngClass]="filter == 'Serie' ? 'filter active' : 'filter'">Series</button> 
+  </div>
+
+
+ 
+  <div *ngIf="filter == 'Todos'">
+  <div class="flex">
+    <div *ngFor="let nombre of Todos">
+      <app-card [isadd] = true [movies_series]= nombre></app-card>
+      <!-- <app-card [movies_series]= nombre></app-card>  -->
+    </div>
+  </div>
+</div>
+
+<div *ngIf="filter == 'Pelicula'">
+  <div class="flex">
+    <div *ngFor="let nombre of Movies">
+      <app-card [isadd] = true [movies_series]= nombre></app-card>
+      <!-- <app-card [movies_series]= nombre></app-card>  -->
+    </div>
+  </div>
+</div>
+
+<div *ngIf="filter == 'Serie'">
+  <div class="flex">
+    <div *ngFor="let nombre of Series">
+      <app-card [isadd] = true [movies_series]= nombre></app-card>
+      <!-- <app-card [movies_series]= nombre></app-card>   -->
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+
+

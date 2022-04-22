@@ -1,0 +1,34 @@
+.container3{
+    margin-left: 10.7% ;
+    margin-top: 5%;
+}
+.cards{
+    
+    height: 50vh;  
+    width: 18vw;
+    background: rgba(32, 40, 62, 0.8);
+    backdrop-filter: blur(80px);
+    padding: 8px 8px 16px;
+    border-radius: 12px;
+  }
+
+  .portada{
+    height: 45vh;
+    width: 17vw;
+    border-radius: 8px;
+    
+}
+  .rating{
+    position: absolute;
+    top:18px;
+    left: 16px;
+    padding: 8px 8px;
+    width: 61px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    color: #FFAD49;
+    font-size: 16px;
+    line-height: 24px;
+}
